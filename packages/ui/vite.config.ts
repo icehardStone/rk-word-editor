@@ -4,7 +4,7 @@ import { resolve } from 'path';
 export default defineConfig({
     resolve: {
         alias: {
-            '@raazkhnl/rk-editor-core': resolve(__dirname, '../core/src/index.ts'),
+            '@icehardStone/rk-editor-core': resolve(__dirname, '../core/src/index.ts'),
         },
     },
     build: {
@@ -17,7 +17,7 @@ export default defineConfig({
         },
         rollupOptions: {
             external: [
-                '@raazkhnl/rk-editor-core',
+                '@icehardStone/rk-editor-core',
                 '@tiptap/core',
                 '@tiptap/pm',
                 '@tiptap/pm/state',

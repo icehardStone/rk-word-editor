@@ -1,5 +1,5 @@
 {
-    "name": "@raazkhnl/rk-editor-demo",
+    "name": "@icehardStone/rk-editor-demo",
     "version": "4.6.0",
     "private": true,
     "type": "module",
@@ -9,8 +9,8 @@
         "preview": "vite preview"
     },
     "dependencies": {
-        "@raazkhnl/rk-editor-core": "*",
-        "@raazkhnl/rk-editor-ui": "*"
+        "@icehardStone/rk-editor-core": "*",
+        "@icehardStone/rk-editor-ui": "*"
     },
     "devDependencies": {
         "@types/node": "^20.11.0",

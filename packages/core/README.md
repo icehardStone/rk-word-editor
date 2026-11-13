@@ -1,9 +1,9 @@
-# @raazkhnl/rk-editor-core
+# @icehardStone/rk-editor-core
 
 > **Headless, framework-agnostic rich-text Word editor engine for the web.** Built on [Tiptap](https://tiptap.dev) and [ProseMirror](https://prosemirror.net) — fully MIT-licensed, no paywalled features, no telemetry.
 
-[![npm](https://img.shields.io/npm/v/%40raazkhnl%2Frk-editor-core?label=npm)](https://www.npmjs.com/package/@raazkhnl/rk-editor-core)
-[![npm downloads](https://img.shields.io/npm/dm/%40raazkhnl%2Frk-editor-core)](https://www.npmjs.com/package/@raazkhnl/rk-editor-core)
+[![npm](https://img.shields.io/npm/v/%40raazkhnl%2Frk-editor-core?label=npm)](https://www.npmjs.com/package/@icehardStone/rk-editor-core)
+[![npm downloads](https://img.shields.io/npm/dm/%40raazkhnl%2Frk-editor-core)](https://www.npmjs.com/package/@icehardStone/rk-editor-core)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/raazkhnl/rk-word-editor/blob/main/LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 
@@ -29,15 +29,15 @@ The headless engine for [**RK Word Editor**](https://github.com/raazkhnl/rk-word
 ## Install
 
 ```bash
-npm install @raazkhnl/rk-editor-core
+npm install @icehardStone/rk-editor-core
 ```
 
-If you also want the included Word-style toolbar / menubar / dialogs, install [`@raazkhnl/rk-editor-ui`](https://www.npmjs.com/package/@raazkhnl/rk-editor-ui).
+If you also want the included Word-style toolbar / menubar / dialogs, install [`@icehardStone/rk-editor-ui`](https://www.npmjs.com/package/@icehardStone/rk-editor-ui).
 
 ## Quick start
 
 ```ts
-import { WordEditor } from '@raazkhnl/rk-editor-core';
+import { WordEditor } from '@icehardStone/rk-editor-core';
 
 const editor = new WordEditor({
   element: document.getElementById('editor')!,
@@ -83,7 +83,7 @@ editor.getTableOfContents();  // [{ level, text, id }]
 
 ```ts
 // Vanilla
-import { WordEditor } from '@raazkhnl/rk-editor-core';
+import { WordEditor } from '@icehardStone/rk-editor-core';
 
 // React
 useEffect(() => { const e = new WordEditor({ element: ref.current! }); return () => e.destroy(); }, []);
@@ -94,7 +94,7 @@ onMounted(() => { editor = new WordEditor({ element: el.value! }); });
 // Svelte / Angular / Solid — same pattern: ref → new WordEditor()
 ```
 
-For a fully-featured drop-in (toolbar + menubar + status bar + outline + dialogs) use [`@raazkhnl/rk-editor-ui`](https://www.npmjs.com/package/@raazkhnl/rk-editor-ui)'s `EditorShell` or `<rk-word-editor>` web component.
+For a fully-featured drop-in (toolbar + menubar + status bar + outline + dialogs) use [`@icehardStone/rk-editor-ui`](https://www.npmjs.com/package/@icehardStone/rk-editor-ui)'s `EditorShell` or `<rk-word-editor>` web component.
 
 ## Documentation
 

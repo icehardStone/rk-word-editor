@@ -1,5 +1,5 @@
-import { EditorShell, toast } from '@raazkhnl/rk-editor-ui';
-import '@raazkhnl/rk-editor-ui/styles.css';
+import { EditorShell, toast } from '@icehardStone/rk-editor-ui';
+import '@icehardStone/rk-editor-ui/styles.css';
 import { SAMPLE_DOC_HTML } from './sample';
 
 const app = document.getElementById('app')!;

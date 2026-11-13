@@ -31,7 +31,7 @@ You have two private channels:
 
 In your report, please include:
 
-- The affected package(s) and version(s) (e.g. `@raazkhnl/rk-editor-core@4.6.0`).
+- The affected package(s) and version(s) (e.g. `@icehardStone/rk-editor-core@4.6.0`).
 - A clear description of the issue and its impact.
 - Reproduction steps, ideally a minimal code sample or a hosted demo.
 - The browser / runtime / OS where you observed the issue.
@@ -62,8 +62,8 @@ In scope:
 - Prototype pollution / arbitrary-property-set issues in the public APIs.
 - HTML/Markdown/DOCX import or export round-trips that lead to code
   execution or data exfiltration.
-- Issues in any package shipped to npm: `@raazkhnl/rk-editor-core`,
-  `@raazkhnl/rk-editor-ui`, `@raazkhnl/rk-editor-cli`.
+- Issues in any package shipped to npm: `@icehardStone/rk-editor-core`,
+  `@icehardStone/rk-editor-ui`, `@icehardStone/rk-editor-cli`.
 
 Out of scope:
 

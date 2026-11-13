@@ -1,4 +1,4 @@
-import { WordEditor, type WordEditorOptions } from '@raazkhnl/rk-editor-core';
+import { WordEditor, type WordEditorOptions } from '@icehardStone/rk-editor-core';
 import { Modal } from './Modal';
 import { icon, Icons, type IconName } from './icons';
 import {
@@ -43,6 +43,9 @@ const FONT_FAMILIES = [
     { label: 'Noto Sans Devanagari', value: '"Noto Sans Devanagari", sans-serif' },
     { label: 'Mangal', value: 'Mangal, sans-serif' },
     { label: 'Kalimati', value: 'Kalimati, sans-serif' },
+    { label: '微软雅黑', value: '"Microsoft YaHei", sans-serif' },
+    { label: '宋体', value: 'SimSun, serif' },
+    { label: '楷体', value: 'KaiTi, serif' },
 ];
 
 const FONT_SIZES = [8, 9, 10, 11, 12, 14, 16, 18, 20, 22, 24, 28, 32, 36, 40, 48, 56, 64, 72, 96];

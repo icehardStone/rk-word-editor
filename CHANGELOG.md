@@ -16,7 +16,7 @@ Major polish, responsiveness, and accessibility release. Adds a command palette,
 - **PWA-installable demo** with a web manifest, theme-color, SVG favicon, and a stale-while-revalidate service worker (production builds only).
 - **Hosted demo on GitHub Pages** — `.github/workflows/publish.yml` now ships every push to `main` to `https://raazkhnl.github.io/rk-word-editor/` via the official `actions/deploy-pages` flow. SPA fallback (`404.html`) and `.nojekyll` are written automatically.
 - **Web component events** — `<rk-word-editor>` now dispatches `rk-ready`, `rk-change`, and `rk-selection` CustomEvents and exposes `getValue(format)` / `setValue(content)` methods. New `properties` attribute toggles the right-side panel; `theme` and `readonly` react to attribute changes.
-- **CLI scaffolder** rewritten — `npx @raazkhnl/rk-editor-cli init` now generates a working Vite project (Vanilla, React, Vue, or Svelte template) with `index.html`, `vite.config.ts`, `tsconfig.json`, and a starter `main.{ts,tsx}` that imports `EditorShell` and the styles.
+- **CLI scaffolder** rewritten — `npx @icehardStone/rk-editor-cli init` now generates a working Vite project (Vanilla, React, Vue, or Svelte template) with `index.html`, `vite.config.ts`, `tsconfig.json`, and a starter `main.{ts,tsx}` that imports `EditorShell` and the styles.
 
 ### Fixed
 - **Hard-coded colours** scoped through new CSS tokens (`--rk-doc-bg`, `--rk-doc-text`, `--rk-table-border`, `--rk-table-header-bg`, `--rk-table-header-text`, `--rk-code-inline-bg`, `--rk-code-inline-text`, `--rk-code-block-bg`, `--rk-blockquote-text`, `--rk-blockquote-border`). Dark-mode tables, inline code, and blockquotes now meet WCAG AA contrast against the dark surface.
@@ -136,7 +136,7 @@ Polish &amp; feature release. Adds draggable text boxes, fixes the IDE/TS errors
 - **TextBox tests** — three more cases (default attrs, custom attrs, survives DOCX round-trip).
 
 ### Fixed
-- **TypeScript: "Cannot find module declarations for '@raazkhnl/rk-editor-ui/styles.css'"** — added [`vite-env.d.ts`](apps/demo/src/vite-env.d.ts) with `*.css` declaration so editors stop complaining about the side-effect import.
+- **TypeScript: "Cannot find module declarations for '@icehardStone/rk-editor-ui/styles.css'"** — added [`vite-env.d.ts`](apps/demo/src/vite-env.d.ts) with `*.css` declaration so editors stop complaining about the side-effect import.
 - **TypeScript 7 deprecation: `baseUrl`** — removed `baseUrl` from every tsconfig and switched `paths` to use repo-relative paths. The deprecation warning is gone.
 - **Placeholder appeared on every new line.** The Tiptap `Placeholder` extension was set with `showOnlyCurrent: false`, which adds the `data-placeholder` attribute to *every* empty paragraph. Tightened to `showOnlyCurrent: true` and scoped the CSS strictly to `.ProseMirror.is-editor-empty > .is-empty:first-child::before` — the hint now only shows when the entire document is empty.
 - **Document outline was congested and clicking a heading didn't scroll.** Rewrote with proper hierarchical indentation, monospace `H1/H2/H3` markers, ellipsis truncation, and most importantly: clicking now resolves the heading's actual DOM node via `view.nodeDOM(pos)` and calls `scrollIntoView({ behavior: 'smooth', block: 'start' })` on it, so it works regardless of which scroll container the editor lives in.
@@ -196,7 +196,7 @@ This is a major release. Most consumer APIs are backwards-compatible (the legacy
 ### Added
 - **`PrintEngine`** — true PDF / print pipeline rendered in an isolated iframe. The browser print dialog now sees only the document, with proper `@page` size, margins, page numbers, and pagination. Default is **A4 portrait**.
 - **`ExportEngine` rewrite** — full DOCX coverage: embedded images (with base64 + remote fetch), hyperlinks, all character marks (color, highlight, font family, size, strike, sub/sup, code, track-changes), task lists, code blocks, blockquotes, multilevel lists, Nepali numbering, captions, citations, footnotes, and section page properties from the editor's page layout.
-- **Find & Replace** (`@raazkhnl/rk-editor-core`'s `FindReplace` extension) — case-sensitive, whole-word and regex options, with decoration-based match highlighting.
+- **Find & Replace** (`@icehardStone/rk-editor-core`'s `FindReplace` extension) — case-sensitive, whole-word and regex options, with decoration-based match highlighting.
 - **Page layout API** — `editor.getPageLayout()` / `editor.setPageLayout(...)`. Supports A3, A4, A5, Letter, Legal, Tabloid; portrait/landscape; per-side margins. New *File → Page layout* dialog in the UI.
 - **Document outline sidebar** (`Outline` component) — lists headings and jumps to them on click.
 - **Status bar** with page count, word/character count, reading time and a zoom control.
@@ -215,7 +215,7 @@ This is a major release. Most consumer APIs are backwards-compatible (the legacy
 
 ### Changed
 - **All packages bumped to `4.0.0`** and re-aligned (peer dependencies use `^4.0.0`).
-- Tiptap deps moved out of the root `package.json` into `@raazkhnl/rk-editor-core`.
+- Tiptap deps moved out of the root `package.json` into `@icehardStone/rk-editor-core`.
 - Build pipeline split: `tsconfig.json` for typechecking, `tsconfig.build.json` for `.d.ts` emit.
 - `vite.config.*` rewritten — proper externals, named exports, sourcemaps, ES2020 target.
 - Demo `vite.config.js` (CommonJS) → `vite.config.ts` (ESM).

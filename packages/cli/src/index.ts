@@ -92,8 +92,8 @@ async function scaffold(targetDir: string, projectName: string, template: Templa
             preview: 'vite preview',
         },
         dependencies: {
-            '@raazkhnl/rk-editor-core': EDITOR_VERSION,
-            '@raazkhnl/rk-editor-ui': EDITOR_VERSION,
+            '@icehardStone/rk-editor-core': EDITOR_VERSION,
+            '@icehardStone/rk-editor-ui': EDITOR_VERSION,
         },
         devDependencies: {
             vite: '^5.4.0',
@@ -134,7 +134,7 @@ async function scaffold(targetDir: string, projectName: string, template: Templa
         include: ['src'],
     }, null, 2));
     await fs.writeFile(path.join(targetDir, '.gitignore'), 'node_modules\ndist\n.env\n');
-    await fs.writeFile(path.join(targetDir, 'README.md'), `# ${projectName}\n\nGenerated with @raazkhnl/rk-editor-cli (${template} template).\n\n\`\`\`bash\nnpm install\nnpm run dev\n\`\`\`\n`);
+    await fs.writeFile(path.join(targetDir, 'README.md'), `# ${projectName}\n\nGenerated with @icehardStone/rk-editor-cli (${template} template).\n\n\`\`\`bash\nnpm install\nnpm run dev\n\`\`\`\n`);
 }
 
 function mainFilename(t: Template): string {
@@ -166,8 +166,8 @@ function buildMainFile(template: Template): string {
     if (template === 'react') {
         return `import React, { useEffect, useRef } from 'react';
 import { createRoot } from 'react-dom/client';
-import { EditorShell } from '@raazkhnl/rk-editor-ui';
-import '@raazkhnl/rk-editor-ui/styles.css';
+import { EditorShell } from '@icehardStone/rk-editor-ui';
+import '@icehardStone/rk-editor-ui/styles.css';
 
 function App() {
   const ref = useRef<HTMLDivElement>(null);
@@ -186,8 +186,8 @@ function App() {
 createRoot(document.getElementById('app')!).render(<App />);
 `;
     }
-    return `import { EditorShell } from '@raazkhnl/rk-editor-ui';
-import '@raazkhnl/rk-editor-ui/styles.css';
+    return `import { EditorShell } from '@icehardStone/rk-editor-ui';
+import '@icehardStone/rk-editor-ui/styles.css';
 
 new EditorShell({
   container: document.getElementById('app')!,

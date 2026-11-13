@@ -35,7 +35,7 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           npm run build:packages
-          npm run build --workspace=@raazkhnl/rk-editor-cli
-          npm publish --workspace=@raazkhnl/rk-editor-core --access public
-          npm publish --workspace=@raazkhnl/rk-editor-ui   --access public
-          npm publish --workspace=@raazkhnl/rk-editor-cli  --access public
+          npm run build --workspace=@icehardStone/rk-editor-cli
+          npm publish --workspace=@icehardStone/rk-editor-core --access public
+          npm publish --workspace=@icehardStone/rk-editor-ui   --access public
+          npm publish --workspace=@icehardStone/rk-editor-cli  --access public

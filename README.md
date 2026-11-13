@@ -3,9 +3,9 @@
 > **A modern, drop-in, fully open-source Microsoft Word / Google Docs alternative for the web.** Build rich-text editing into any web app — Vanilla JS, React, Vue, Svelte, Angular, Next.js or as a `<rk-word-editor>` Web Component — with first-class **DOCX export, true PDF/print, page layout, find &amp; replace, track changes, draggable text boxes, image resize, dark mode** and a polished Word-style UI. MIT-licensed. No paywall. No telemetry.
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![npm: core](https://img.shields.io/npm/v/%40raazkhnl%2Frk-editor-core?label=core)](https://www.npmjs.com/package/@raazkhnl/rk-editor-core)
-[![npm: ui](https://img.shields.io/npm/v/%40raazkhnl%2Frk-editor-ui?label=ui)](https://www.npmjs.com/package/@raazkhnl/rk-editor-ui)
-[![npm downloads](https://img.shields.io/npm/dm/%40raazkhnl%2Frk-editor-core?label=downloads)](https://www.npmjs.com/package/@raazkhnl/rk-editor-core)
+[![npm: core](https://img.shields.io/npm/v/%40raazkhnl%2Frk-editor-core?label=core)](https://www.npmjs.com/package/@icehardStone/rk-editor-core)
+[![npm: ui](https://img.shields.io/npm/v/%40raazkhnl%2Frk-editor-ui?label=ui)](https://www.npmjs.com/package/@icehardStone/rk-editor-ui)
+[![npm downloads](https://img.shields.io/npm/dm/%40raazkhnl%2Frk-editor-core?label=downloads)](https://www.npmjs.com/package/@icehardStone/rk-editor-core)
 [![Made with TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![Built on Tiptap](https://img.shields.io/badge/built%20on-Tiptap-78cfb1)](https://tiptap.dev)
 
@@ -27,7 +27,7 @@ RK Word Editor is the rich-text editor we wished existed when we needed somethin
   - [React](#react)
   - [Vue 3](#vue-3)
   - [Next.js](#nextjs)
-- [Headless usage (`@raazkhnl/rk-editor-core`)](#headless-usage-raazkhnlrk-editor-core)
+- [Headless usage (`@icehardStone/rk-editor-core`)](#headless-usage-raazkhnlrk-editor-core)
 - [API reference](#api-reference)
   - [`WordEditor` options](#wordeditor-options)
   - [Exports & imports](#exports--imports)
@@ -115,9 +115,9 @@ Then open `http://localhost:3000`.
 
 | Package | What it is | Install |
 | --- | --- | --- |
-| [`@raazkhnl/rk-editor-core`](packages/core) | Headless engine: Tiptap extensions, DOCX/Markdown/HTML/JSON exporters, print engine, page layout, find &amp; replace. | `npm i @raazkhnl/rk-editor-core` |
-| [`@raazkhnl/rk-editor-ui`](packages/ui) | Default UI: menubar, toolbar, modals, find bar, status bar, document outline, dark mode. | `npm i @raazkhnl/rk-editor-ui` |
-| [`@raazkhnl/rk-editor-cli`](packages/cli) | `rk-editor init` scaffolder. | `npm i -g @raazkhnl/rk-editor-cli` |
+| [`@icehardStone/rk-editor-core`](packages/core) | Headless engine: Tiptap extensions, DOCX/Markdown/HTML/JSON exporters, print engine, page layout, find &amp; replace. | `npm i @icehardStone/rk-editor-core` |
+| [`@icehardStone/rk-editor-ui`](packages/ui) | Default UI: menubar, toolbar, modals, find bar, status bar, document outline, dark mode. | `npm i @icehardStone/rk-editor-ui` |
+| [`@icehardStone/rk-editor-cli`](packages/cli) | `rk-editor init` scaffolder. | `npm i -g @icehardStone/rk-editor-cli` |
 
 The UI package depends on the core package as a peer dependency.
 
@@ -129,13 +129,13 @@ The UI package depends on the core package as a peer dependency.
 <!doctype html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://unpkg.com/@raazkhnl/rk-editor-ui/dist/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@icehardStone/rk-editor-ui/dist/style.css" />
     <style>html, body, #app { height: 100%; margin: 0; }</style>
   </head>
   <body>
     <div id="app"></div>
     <script type="module">
-      import { EditorShell } from 'https://unpkg.com/@raazkhnl/rk-editor-ui';
+      import { EditorShell } from 'https://unpkg.com/@icehardStone/rk-editor-ui';
       new EditorShell({
         container: document.getElementById('app'),
         initialContent: '<h1>Hello, world!</h1><p>Start typing…</p>',
@@ -149,12 +149,12 @@ The UI package depends on the core package as a peer dependency.
 ### Vite / TypeScript
 
 ```bash
-npm install @raazkhnl/rk-editor-core @raazkhnl/rk-editor-ui
+npm install @icehardStone/rk-editor-core @icehardStone/rk-editor-ui
 ```
 
 ```ts
-import { EditorShell } from '@raazkhnl/rk-editor-ui';
-import '@raazkhnl/rk-editor-ui/styles.css';
+import { EditorShell } from '@icehardStone/rk-editor-ui';
+import '@icehardStone/rk-editor-ui/styles.css';
 
 const shell = new EditorShell({
   container: document.getElementById('app')!,
@@ -172,8 +172,8 @@ const shell = new EditorShell({
 ### As a Web Component
 
 ```html
-<script type="module" src="https://unpkg.com/@raazkhnl/rk-editor-ui"></script>
-<link rel="stylesheet" href="https://unpkg.com/@raazkhnl/rk-editor-ui/dist/style.css" />
+<script type="module" src="https://unpkg.com/@icehardStone/rk-editor-ui"></script>
+<link rel="stylesheet" href="https://unpkg.com/@icehardStone/rk-editor-ui/dist/style.css" />
 
 <rk-word-editor placeholder="Type here…" theme="light" outline></rk-word-editor>
 ```
@@ -194,8 +194,8 @@ The editor itself is framework-agnostic; in React, mount it in a ref:
 
 ```tsx
 import { useEffect, useRef } from 'react';
-import { EditorShell } from '@raazkhnl/rk-editor-ui';
-import '@raazkhnl/rk-editor-ui/styles.css';
+import { EditorShell } from '@icehardStone/rk-editor-ui';
+import '@icehardStone/rk-editor-ui/styles.css';
 
 export default function MyEditor() {
   const ref = useRef<HTMLDivElement>(null);
@@ -219,8 +219,8 @@ export default function MyEditor() {
 ```vue
 <script setup lang="ts">
 import { onMounted, onBeforeUnmount, ref } from 'vue';
-import { EditorShell } from '@raazkhnl/rk-editor-ui';
-import '@raazkhnl/rk-editor-ui/styles.css';
+import { EditorShell } from '@icehardStone/rk-editor-ui';
+import '@icehardStone/rk-editor-ui/styles.css';
 
 const root = ref<HTMLDivElement | null>(null);
 let shell: EditorShell | null = null;
@@ -250,12 +250,12 @@ import dynamic from 'next/dynamic';
 export default dynamic(() => import('./MyEditor'), { ssr: false });
 ```
 
-## Headless usage (`@raazkhnl/rk-editor-core`)
+## Headless usage (`@icehardStone/rk-editor-core`)
 
 If you don't need the bundled toolbar, use just the core. You get the `WordEditor` class plus all extensions, the export engines, find &amp; replace, page layout — but build your own UI.
 
 ```ts
-import { WordEditor } from '@raazkhnl/rk-editor-core';
+import { WordEditor } from '@icehardStone/rk-editor-core';
 
 const editor = new WordEditor({
   element: document.getElementById('editor')!,
@@ -387,7 +387,7 @@ stop(); // remove the listener later
 ### Custom slash commands
 
 ```ts
-import { EditorShell, type SlashCommand } from '@raazkhnl/rk-editor-ui';
+import { EditorShell, type SlashCommand } from '@icehardStone/rk-editor-ui';
 
 const slashCommands: SlashCommand[] = [
   {

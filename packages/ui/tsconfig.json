@@ -5,7 +5,7 @@
         "outDir": "./dist",
         "noEmit": true,
         "paths": {
-            "@raazkhnl/rk-editor-core": [
+            "@icehardStone/rk-editor-core": [
                 "../core/src/index.ts"
             ]
         }

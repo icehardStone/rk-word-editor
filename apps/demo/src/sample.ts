@@ -34,7 +34,7 @@ export const SAMPLE_DOC_HTML = `
 <h2>Code &amp; math</h2>
 <p>You can drop in code blocks for snippets:</p>
 <pre><code>// Mount the editor in any framework
-import { EditorShell } from '@raazkhnl/rk-editor-ui';
+import { EditorShell } from '@icehardStone/rk-editor-ui';
 
 new EditorShell({
   container: document.getElementById('app'),

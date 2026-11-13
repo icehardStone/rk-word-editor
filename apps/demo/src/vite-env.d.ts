@@ -5,5 +5,5 @@ declare module '*.css?inline' {
     const content: string;
     export default content;
 }
-declare module '@raazkhnl/rk-editor-ui/styles.css';
-declare module '@raazkhnl/rk-editor-ui/styles';
+declare module '@icehardStone/rk-editor-ui/styles.css';
+declare module '@icehardStone/rk-editor-ui/styles';

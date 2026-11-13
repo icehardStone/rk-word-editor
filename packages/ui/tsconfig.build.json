@@ -6,7 +6,7 @@
         "declarationDir": "./dist",
         "emitDeclarationOnly": true,
         "paths": {
-            "@raazkhnl/rk-editor-core": [
+            "@icehardStone/rk-editor-core": [
                 "../core/dist/index.d.ts"
             ]
         }

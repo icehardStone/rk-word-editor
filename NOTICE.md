@@ -17,8 +17,8 @@ RK Word Editor is a free, open-source project distributed under the
 
 ## Direct dependencies
 
-The packages below are bundled into `@raazkhnl/rk-editor-core`,
-`@raazkhnl/rk-editor-ui`, or `@raazkhnl/rk-editor-cli`. Every one of
+The packages below are bundled into `@icehardStone/rk-editor-core`,
+`@icehardStone/rk-editor-ui`, or `@icehardStone/rk-editor-cli`. Every one of
 them carries a permissive licence (MIT, BSD-2-Clause, BSD-3-Clause,
 ISC, Apache-2.0, or BlueOak), so the combined work stays MIT-compatible
 and free for commercial use.

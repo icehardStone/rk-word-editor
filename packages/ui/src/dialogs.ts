@@ -1,4 +1,4 @@
-import type { WordEditor, PageLayoutOptions } from '@raazkhnl/rk-editor-core';
+import type { WordEditor, PageLayoutOptions } from '@icehardStone/rk-editor-core';
 import { Modal } from './Modal';
 
 export function showLinkDialog(editor: WordEditor): void {
@@ -237,7 +237,7 @@ export function showAboutDialog(): void {
         width: 480,
         bodyHtml: `<p>A free, open-source, fully customizable Word-style editor built with Tiptap and ProseMirror.</p>
             <p><strong>Version:</strong> ${RK_EDITOR_VERSION}<br/>
-            <strong>Author:</strong> RaaZ Khanal (@raazkhnl)<br/>
+            <strong>Author:</strong> RaaZ Khanal (@icehardStone)<br/>
             <strong>License:</strong> MIT</p>
             <p><a href="https://github.com/raazkhnl/rk-word-editor" target="_blank" rel="noopener">View on GitHub</a></p>`,
         confirmLabel: 'Close',

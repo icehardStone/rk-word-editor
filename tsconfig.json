@@ -27,10 +27,10 @@
             "@rk-editor/ui": [
                 "./packages/ui/src/index.ts"
             ],
-            "@raazkhnl/rk-editor-core": [
+            "@icehardStone/rk-editor-core": [
                 "./packages/core/src/index.ts"
             ],
-            "@raazkhnl/rk-editor-ui": [
+            "@icehardStone/rk-editor-ui": [
                 "./packages/ui/src/index.ts"
             ]
         }

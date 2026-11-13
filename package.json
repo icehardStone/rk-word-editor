@@ -27,13 +27,13 @@
     "apps/*"
   ],
   "scripts": {
-    "dev": "npm run dev --workspace=@raazkhnl/rk-editor-demo",
-    "build": "npm run build --workspace=@raazkhnl/rk-editor-core && npm run build --workspace=@raazkhnl/rk-editor-ui && npm run build --workspace=@raazkhnl/rk-editor-cli && npm run build --workspace=@raazkhnl/rk-editor-demo",
-    "build:packages": "npm run build --workspace=@raazkhnl/rk-editor-core && npm run build --workspace=@raazkhnl/rk-editor-ui",
+    "dev": "npm run dev --workspace=@icehardStone/rk-editor-demo",
+    "build": "npm run build --workspace=@icehardStone/rk-editor-core && npm run build --workspace=@icehardStone/rk-editor-ui && npm run build --workspace=@icehardStone/rk-editor-cli && npm run build --workspace=@icehardStone/rk-editor-demo",
+    "build:packages": "npm run build --workspace=@icehardStone/rk-editor-core && npm run build --workspace=@icehardStone/rk-editor-ui",
     "test": "npm test --workspaces --if-present",
     "lint": "npm run lint --workspaces --if-present",
     "clean": "rimraf packages/*/dist apps/*/dist packages/*/node_modules apps/*/node_modules node_modules",
-    "publish:packages": "npm publish --workspace=@raazkhnl/rk-editor-core --access public && npm publish --workspace=@raazkhnl/rk-editor-ui --access public && npm publish --workspace=@raazkhnl/rk-editor-cli --access public"
+    "publish:packages": "npm publish --workspace=@icehardStone/rk-editor-core --access public && npm publish --workspace=@icehardStone/rk-editor-ui --access public && npm publish --workspace=@icehardStone/rk-editor-cli --access public"
   },
   "devDependencies": {
     "@types/node": "^20.11.0",

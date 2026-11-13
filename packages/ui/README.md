@@ -1,9 +1,9 @@
-# @raazkhnl/rk-editor-ui
+# @icehardStone/rk-editor-ui
 
-> **Drop-in Word-style UI for the web.** Toolbar, menubar, modals, find-and-replace, document outline, status bar, dark mode, page layout dialog — and a `<rk-word-editor>` web component. Built on top of [`@raazkhnl/rk-editor-core`](https://www.npmjs.com/package/@raazkhnl/rk-editor-core).
+> **Drop-in Word-style UI for the web.** Toolbar, menubar, modals, find-and-replace, document outline, status bar, dark mode, page layout dialog — and a `<rk-word-editor>` web component. Built on top of [`@icehardStone/rk-editor-core`](https://www.npmjs.com/package/@icehardStone/rk-editor-core).
 
-[![npm](https://img.shields.io/npm/v/%40raazkhnl%2Frk-editor-ui?label=npm)](https://www.npmjs.com/package/@raazkhnl/rk-editor-ui)
-[![npm downloads](https://img.shields.io/npm/dm/%40raazkhnl%2Frk-editor-ui)](https://www.npmjs.com/package/@raazkhnl/rk-editor-ui)
+[![npm](https://img.shields.io/npm/v/%40raazkhnl%2Frk-editor-ui?label=npm)](https://www.npmjs.com/package/@icehardStone/rk-editor-ui)
+[![npm downloads](https://img.shields.io/npm/dm/%40raazkhnl%2Frk-editor-ui)](https://www.npmjs.com/package/@icehardStone/rk-editor-ui)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/raazkhnl/rk-word-editor/blob/main/LICENSE)
 
 The polished default UI for **[RK Word Editor](https://github.com/raazkhnl/rk-word-editor)** — a free, fully open-source Microsoft Word / Google Docs alternative for the web. MIT-licensed. No paywall. No telemetry.
@@ -11,14 +11,14 @@ The polished default UI for **[RK Word Editor](https://github.com/raazkhnl/rk-wo
 ## Install
 
 ```bash
-npm install @raazkhnl/rk-editor-core @raazkhnl/rk-editor-ui
+npm install @icehardStone/rk-editor-core @icehardStone/rk-editor-ui
 ```
 
 ## Quick start (one line, any framework)
 
 ```ts
-import { EditorShell } from '@raazkhnl/rk-editor-ui';
-import '@raazkhnl/rk-editor-ui/styles.css';
+import { EditorShell } from '@icehardStone/rk-editor-ui';
+import '@icehardStone/rk-editor-ui/styles.css';
 
 new EditorShell({
   container: document.getElementById('app')!,
@@ -44,8 +44,8 @@ That gives you:
 ## As a Web Component
 
 ```html
-<script type="module" src="https://unpkg.com/@raazkhnl/rk-editor-ui"></script>
-<link rel="stylesheet" href="https://unpkg.com/@raazkhnl/rk-editor-ui/dist/style.css" />
+<script type="module" src="https://unpkg.com/@icehardStone/rk-editor-ui"></script>
+<link rel="stylesheet" href="https://unpkg.com/@icehardStone/rk-editor-ui/dist/style.css" />
 
 <rk-word-editor placeholder="Type here…" theme="auto" outline></rk-word-editor>
 ```
@@ -54,8 +54,8 @@ That gives you:
 
 ```tsx
 import { useEffect, useRef } from 'react';
-import { EditorShell } from '@raazkhnl/rk-editor-ui';
-import '@raazkhnl/rk-editor-ui/styles.css';
+import { EditorShell } from '@icehardStone/rk-editor-ui';
+import '@icehardStone/rk-editor-ui/styles.css';
 
 export default function MyEditor() {
   const ref = useRef<HTMLDivElement>(null);

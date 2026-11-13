@@ -1,4 +1,4 @@
-import type { WordEditor } from '@raazkhnl/rk-editor-core';
+import type { WordEditor } from '@icehardStone/rk-editor-core';
 import { icon } from './icons';
 
 export interface StatusBarOptions {
